@@ -1,0 +1,30 @@
+.toggle {
+  width: 44px;
+  height: 22px;
+  flex: 0 0 44px;
+  padding: 2px;
+  background-color: var(--toggle-bg);
+  border-radius: 16px;
+  border: none;
+  transition: background-color 180ms ease-in-out;
+  cursor: pointer;
+
+  &-in {
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-color: var(--toggle-in);
+    border-radius: 50%;
+    box-shadow: var(--toggle-shadow);
+    transform: translate3d(0, 0, 0);
+    transition: transform 180ms ease-in-out;
+  }
+
+  &.active {
+    background-color: var(--toggle-active-bg);
+
+    .toggle-in {
+      transform: translate3d(22px, 0, 0);
+    }
+  }
+}

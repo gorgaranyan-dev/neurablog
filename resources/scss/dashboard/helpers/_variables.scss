@@ -9,20 +9,9 @@
   --desc-color: #9f9f9f;
   --red-rgb: 255, 59, 48;
   --red: rgba(var(--red-rgb), 1);
-
-  //Notice
-
-  --notice-success-bg: #E7F1FF;
-  --notice-success-color: var(--primary);
-  --notice-error-bg: #FDECEC;
-  --notice-error-color: #EF4444;
-  --notice-warning-bg: #FFFCF5;
-  --notice-warning-color: #DF900A;
-  --notice-checked-bg: #E9F8EF;
-  --notice-checked-color: #1CA656;
-
-  //Loading
-  --loading-bg: linear-gradient(90deg, rgba(var(--white-rgb), 0) 0%, var(--primary) 50%, rgba(var(--white-rgb), 0) 100%);
+  --primary-color:#602F6B;
+  --primary-border:#E2E8F0;
+  --secondary-color:var(--white);
 
   //Components
   //Tab
@@ -39,7 +28,7 @@
   --toggle-shadow: 0 2px 4px 0 rgba(0, 35, 11, 0.2);
   --toggle-in: rgba(var(--white-rgb), 1);
   --toggle-bg: #BFBFBF;
-  --toggle-active-bg: var(--primary);
+  --toggle-active-bg: var(--primary-color);
 
   //Input
   --input-bg: rgba(var(--white-rgb), 1);
@@ -48,15 +37,6 @@
   --input-placeholder-color: #8B949C;
   --input-error: #D3220B;
 
-  //dual input
-  --dual-input-action-bg:#e7e6e6;
-
-  //Textarea
-  --textarea-bg: rgba(var(--white-rgb), 1);
-  --textarea-border: #D9D9D9;
-  --textarea-color: #444;
-  --textarea-placeholder-color: #8B949C;
-  --itextarea-error: #D3220B;
 
   //Dropdown
   --dropdown-bg: rgba(var(--white-rgb), 1);
@@ -73,63 +53,10 @@
   --dropdown-menu-item-action-hover: #e7f1ff;
   --dropdown-menu-item-action-color: var(--primary);
 
-  //Multiselect
-  --multiselect-bg: rgba(var(--white-rgb), 1);
-  --multiselect-border: #D2D7E2;
-  --multiselect-color: #444;
-  --multiselect-placeholder-color: #828282;
-  --multiselect-icon-fill: #525F6A;
-  --multiselect-menu-bg: rgba(var(--white-rgb), 1);
-  --multiselect-menu-shadow: 0 4px 12px 0 rgba(var(--black-rgb), 0.12);
-  --multiselect-menu-item-hover: #F5F5F8;
-  --multiselect-menu-item-color: #182939;
-  --multiselect-menu-item-color-disabled: #B4BDCE;
-  --multiselect-menu-item-action-hover: #e7f1ff;
-  --multiselect-menu-item-action-color: var(--primary);
-
-  //Checkbox
-  --checkbox-border: #DEDEDE;
-  --checkbox-bg: rgba(var(--white-rgb), 1);
-  --checkbox-active-border: var(--primary);
-  --checkbox-active-bg: var(--primary);
-  --checkbox-color: rgba(var(--black-rgb), 0.85);
-  --checkbox-desc-color: var(--desc-color);
-
-  //Radio
-  --radio-border: #DEDEDE;
-  --radio-bg: rgba(var(--white-rgb), 1);
-  --radio-active-border: var(--primary);
-  --radio-active-bg: var(--primary);
-  --radio-color: rgba(var(--black-rgb), 0.85);
-
-  //Radio Modern
-  --radio-modern-border: #DADADA;
-  --radio-modern-bg: rgba(var(--white-rgb), 1);
-  --radio-modern-color: rgba(var(--black-rgb), 0.85);
-  --radio-modern-color-border: rgba(var(--black-rgb), 0.15);
-  --radio-modern-active-bg: rgba(var(--primary-rgb), 0.15);
-  --radio-modern-active-border: var(--primary);
-  --radio-modern-active-color: var(--primary);
-  --radio-modern-hover-bg:#f5f9ff;
-
-  //Range
-  --range-default-bg: rgba(60, 60, 67, 0.18);
-  --range-active-bg: var(--primary);
-  --range-thumb-bg: rgba(var(--white-rgb), 1);
-  --range-thumb-shadow: 0 6px 13px 0 rgba(var(--black-rgb), 0.12), 0 0.5px 4px 0 rgba(var(--black-rgb), 0.12);
-
-  //Dual Range
-  --dual-range-default-bg: rgba(60, 60, 67, 0.18);
-  --dual-range-active-bg: var(--primary);
-  --dual-range-thumb-bg: rgba(var(--white-rgb), 1);
-  --dual-range-thumb-shadow: 0 6px 13px 0 rgba(var(--black-rgb), 0.12), 0 0.5px 4px 0 rgba(var(--black-rgb), 0.12);
-
-
   //Button Primary
   --button-primary-border: var(--primary);
-  --button-primary-bg: var(--primary);
-  --button-primary-color: rgba(var(--white-rgb), 1);
-
+  --button-primary-bg: var(--primary-color);
+  --button-primary-color: var(--secondary-color);
   //Button Secondary
   --button-secondary-border: #EAEBF0;
   --button-secondary-bg: rgba(var(--white-rgb), 1);

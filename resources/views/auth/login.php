@@ -3,24 +3,28 @@ use App\Core\View;
 View::layout( 'layouts.dashboard' );
 View::section( 'title', 'Login Page' );
 ?>
-<div class="container-row">
-    <div class="container-row-in">
+<div class="row">
+    <div class="row-in">
+        <div class="login-container">
+            <form class="login-form">
+                <label class="login-form-label" for="username">Email</label>
+                <input class="login-form-input" type="text" id="username" name="username" placeholder="Your email address" required>
 
-    </div>
-    <div class="container-row-in">
-        <div class="card shadow p-4">
-            <h1 class="text-center mb-4">Login</h1>
-            <form>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" id="email" class="form-control" required>
+                <label class="login-form-label" for="password">Password</label>
+                <input class="login-form-input" type="password" id="password" name="password" placeholder="Your password" required>
+
+                <div class="row">
+                    <button class="toggle">
+                        <i class="toggle-in"></i>
+                    </button>
+                    <span class="remember-sect">Remember me</span>
                 </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" id="password" class="form-control" required>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Sign In</button>
+
+                <button class="button button-reset button-primary" type="submit">SIGN IN</button>
             </form>
         </div>
+    </div>
+    <div class="row-in">
+        <div class="cover"></div>
     </div>
 </div>

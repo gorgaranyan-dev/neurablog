@@ -20,10 +20,9 @@ use App\Core\View; ?>
 </head>
 <body>
 <header>
-    <h1>My Blog</h1>
 </header>
 
-<main>
+<main class="main">
     <?php
     View::yield('content');
     ?>
