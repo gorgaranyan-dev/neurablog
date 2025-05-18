@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Core\Request;
+use App\Core\Http\Request;
 use Exception;
 
 class AuthController extends Controller{

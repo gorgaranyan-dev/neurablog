@@ -2,6 +2,8 @@
 
 namespace App\Core;
 
+use App\Core\Http\Request;
+
 class Router
 {
     private array $routes = [

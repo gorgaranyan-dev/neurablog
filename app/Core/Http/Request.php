@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core;
+namespace App\Core\Http;
 
 class Request
 {
@@ -65,5 +65,9 @@ class Request
 	public function file(string $key): ?array
 	{
 		return $this->files[$key] ?? null;
+	}
+
+	public function server( string $string ) {
+		return $_SERVER[$string] ?? null;
 	}
 }
