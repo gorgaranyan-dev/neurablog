@@ -6,7 +6,7 @@ return [
 		'host' => '127.0.0.1',
 		'name' => 'neurablog',
 		'user' => 'root',
-		'pass' => 'password',
+		'pass' => '',
 		'port' => 3306,
 	],
 	'admin'    => [
