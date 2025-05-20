@@ -20,10 +20,10 @@ abstract class FormRequest {
 		return false;
 	}
 
-	public function validate(): bool {
+	public function validate() {
 		if ( ! $this->authorize() ) {
 			$this->redirectBack( 403 );
-			return false;
+			return null;
 		}
 
 		$this->validator = new Validator( $this->request->all(), $this->rules() );
@@ -31,10 +31,10 @@ abstract class FormRequest {
 		if ( ! $this->validator->validate() ) {
 			$this->flashValidationData();
 			$this->redirectBack( 422 );
-			return false;
+			return null;
 		}
 
-		return true;
+		return $this;
 	}
 
 	public function authorize(): bool {

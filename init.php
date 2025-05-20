@@ -22,6 +22,3 @@ spl_autoload_register(function ($class) {
 	}
 });
 
-
-use App\Core\Database;
-$db = Database::getInstance()->getConnection();

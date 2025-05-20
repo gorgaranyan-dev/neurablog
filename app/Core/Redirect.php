@@ -7,8 +7,14 @@ class Redirect {
 	protected int $status = 302;
 	protected array $errors = [];
 	protected array $old = [];
+    public function __construct()
+    {
+        unset($_SESSION['_validation_errors']);
+        unset($_SESSION['_old_input']);
+        unset($_SESSION['_response']);
+    }
 
-	public function to( string $url ): self {
+    public function to( string $url ): self {
 		$this->url = $url;
 
 		return $this;
@@ -37,9 +43,9 @@ class Redirect {
 
 	public function with( ...$args ): self {
 		if ( ! empty( $args[0] ) && is_array( $args[0] ) ) {
-			$_SESSION['response'] = $args;
+			$_SESSION['_response'] = $args;
 		} elseif ( ! empty( $args[0] ) && ! empty( $args[1] ) && is_string( $args[0] ) ) {
-			$_SESSION['response'][ $args[0] ] = $args[1];
+			$_SESSION['_response'][ $args[0] ] = $args[1];
 		}
 		return $this;
 	}
@@ -50,7 +56,7 @@ class Redirect {
 		return $this;
 	}
 
-	public function send(): void {
+	public function send() {
 		http_response_code( $this->status );
 		header( "Location: {$this->url}" );
 		exit;
