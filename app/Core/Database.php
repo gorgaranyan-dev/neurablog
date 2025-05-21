@@ -17,8 +17,8 @@ class Database {
 	private function definePdo() {
 		try {
 			$config    = require __DIR__ . '/../../config/config.php';
-			$dsn = "mysql:host={$config['db']['host']};port={$config['db']['port']};dbname={$config['db']['name']};charset=utf8mb4";
-			$this->pdo = new PDO( $dsn, $config['db']['user'], $config['db']['pass'], [
+			$dsn = "mysql:host={$config['db_host']};port={$config['db_port']};dbname={$config['db_name']};charset=utf8mb4";
+			$this->pdo = new PDO( $dsn, $config['db_user'], $config['db_pass'], [
 				PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 			] );
 		} catch ( PDOException $e ) {

@@ -75,4 +75,22 @@ class View
             echo self::$sections[$type];
         }
     }
+
+    public static function validationError($key)
+    {
+        if ( ! empty($_SESSION['_validation_errors']) && ! empty($_SESSION['_validation_errors'][$key])) {
+            return $_SESSION['_validation_errors'][$key][0];
+        }
+
+        return null;
+    }
+
+    public static function oldValue($key)
+    {
+        if ( ! empty($_SESSION['_old_input']) && ! empty($_SESSION['_old_input'][$key])) {
+            return $_SESSION['_old_input'][$key];
+        }
+
+        return null;
+    }
 }

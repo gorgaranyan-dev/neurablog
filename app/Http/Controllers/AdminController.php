@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Core\Http\Request;
+use Exception;
+
+class AdminController extends Controller
+{
+    public function dashboard(Request $request)
+    {
+        try {
+            return $this->view('admin.dashboard');
+        } catch (Exception $e) {
+            $this->redirect()->back()->with('error', $e->getMessage())->send();
+        }
+    }
+}

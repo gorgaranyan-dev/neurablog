@@ -2,6 +2,9 @@
 
 namespace App\Core;
 
+use App\Core\Http\Request;
+use App\Http\Controllers\AdminController;
+
 class Router
 {
     private array $routes = [
@@ -51,37 +54,49 @@ class Router
         $this->notFoundHandler = $handler;
     }
 
-    public function dispatch(): void
-    {
-        $method = $_SERVER['REQUEST_METHOD'];
-        $uri    = $this->normalizeUri($_SERVER['REQUEST_URI']);
+	public function dispatch(): void
+	{
+		$method = $_SERVER['REQUEST_METHOD'];
+		$uri    = $this->normalizeUri($_SERVER['REQUEST_URI']);
 
-        // Serve static public if the URI starts with /public
-        if (strpos($uri, '/public/') === 0) {
-            $this->serveStaticFile($uri);
+		// Serve static public files
+		if (strpos($uri, '/public/') === 0) {
+			$this->serveStaticFile($uri);
+			return;
+		}
 
-            return;
-        }
+		$action = $this->routes[$method][$uri] ?? null;
 
-        // If not a static asset, handle the normal route
-        $action = $this->routes[$method][$uri] ?? null;
-        if ($action) {
-            $request = new Request();
-            if (is_array($action)) {
-                [$controller, $methodName] = $action;
-                if (class_exists($controller) && method_exists($controller, $methodName)) {
-                    $controller = new $controller();
-                    $controller->$methodName($request);
-                } else {
-                    $this->send404("Method '{$methodName}' not found in controller '{$controller}'");
-                }
-            } elseif (is_callable($action)) {
-                $action($request);
-            }
-        } else {
-            $this->send404();
-        }
-    }
+		// Wildcard matching support (e.g. /admin/*)
+		if (!$action) {
+			foreach ($this->routes[$method] as $route => $routeAction) {
+				if (substr($route, -2) === '/*') {
+					$baseRoute = rtrim($route, '/*');
+					if (substr($uri, 0, strlen($baseRoute)) === $baseRoute) {
+						$action = $routeAction;
+						break;
+					}
+				}
+			}
+		}
+
+		if ($action) {
+			$request = new Request();
+			if (is_array($action)) {
+				[$controller, $methodName] = $action;
+				if (class_exists($controller) && method_exists($controller, $methodName)) {
+					$controller = new $controller();
+					$controller->$methodName($request);
+				} else {
+					$this->send404("Method '{$methodName}' not found in controller '{$controller}'");
+				}
+			} elseif (is_callable($action)) {
+				$action($request);
+			}
+		} else {
+			$this->send404();
+		}
+	}
 
     private function serveStaticFile($uri): void
     {

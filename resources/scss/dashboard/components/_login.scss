@@ -41,6 +41,19 @@
       color: var(--tertiary-color);
     }
 
+    &-error{
+      color: red;
+      font-size: 11px;
+      transform: translate(0, -17px);
+      display: block;
+      text-align: center;
+
+      &-message{
+        text-align: center;
+        color: red;
+      }
+    }
+
     &-label {
       display: block;
       margin-block-end: 5px;
