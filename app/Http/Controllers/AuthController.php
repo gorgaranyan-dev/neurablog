@@ -9,6 +9,13 @@ use Exception;
 
 class AuthController extends Controller
 {
+    protected AuthService $authService;
+
+    public function __construct()
+    {
+        $this->authService = new AuthService();
+    }
+
     public function loginView(Request $request)
     {
         try {
@@ -22,7 +29,7 @@ class AuthController extends Controller
     {
         try {
             $form = new LoginRequest($request);
-            AuthService::login($form->validated());
+            $this->authService->login($form->validated());
 
             return $this->redirect()->to('/dashboard')->send();
         } catch (Exception $e) {

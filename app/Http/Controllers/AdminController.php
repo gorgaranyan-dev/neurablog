@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Core\Http\Request;
+use App\Models\User;
 use Exception;
 
 class AdminController extends Controller
