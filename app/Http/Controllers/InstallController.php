@@ -9,6 +9,12 @@ use Exception;
 
 class InstallController extends Controller
 {
+    protected Installer $installer;
+
+    public function __construct()
+    {
+        $this->installer = new Installer();
+    }
 
     public function redirectInstall(Request $request)
     {
@@ -31,9 +37,8 @@ class InstallController extends Controller
     public function install(Request $request)
     {
         try {
-            $form      = new PostRequest($request);
-            $installer = (new Installer($form->validate()));
-            $installer->install();
+            $form = new PostRequest($request);
+            $this->installer->install($form->validate());
             $this->redirect()->to('/dashboard')->send();
         } catch (Exception $e) {
             $this->redirect()->back()->with('_error', $e->getMessage())->withInput()->send();

@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Core\ConfigWriter;
+use App\Core\Redirect;
 use App\Database\Seeders\CoreSeeder;
 use App\Http\Requests\Installer\PostRequest;
 use Exception;
@@ -11,16 +12,16 @@ use PDOException;
 
 class Installer
 {
-    private PostRequest $request;
+    protected AuthService $authService;
 
-    public function __construct(PostRequest $request)
+    public function __construct()
     {
-        $this->request = $request;
+        $this->authService = new AuthService();
     }
 
-    public function install(): bool
+    public function install(PostRequest $request): bool
     {
-        $data = $this->request->validated();
+        $data = $request->validated();
 
         // 1. Try DB connection
         $pdo = $this->testDatabaseConnection($data);
@@ -33,6 +34,9 @@ class Installer
 
         // 4. Write config file
         $this->writeConfig($data);
+
+        // 5. Auto login user
+        $this->autoLogin($data);
 
         return true;
     }
@@ -77,17 +81,30 @@ class Installer
     private function writeConfig(array $data): void
     {
         try {
-            (new ConfigWriter())->write('config/config.php', [
-                'db_host'   => $data['db_host'],
-                'db_port'   => $data['db_port'],
-                'db_name'   => $data['db_name'],
-                'db_user'   => $data['db_user'],
-                'db_pass'   => $data['db_pass'],
-                'site_name' => $data['site_name'],
-                'site_url'  => $data['site_url'],
+            $configWriter = new ConfigWriter();
+            $configWriter->addDbCredentials([
+                'db_host' => $data['db_host'],
+                'db_port' => $data['db_port'],
+                'db_name' => $data['db_name'],
+                'db_user' => $data['db_user'],
+                'db_pass' => $data['db_pass'],
             ]);
+            $configWriter->export();
+            include APP_PATH . '/config.php';
         } catch (Exception $e) {
             throw new Exception('Could not write to the config file. Please check file permissions.');
+        }
+    }
+
+    private function autoLogin($data)
+    {
+        try {
+            $this->authService->login(array(
+                'email'    => $data['admin_email'],
+                'password' => $data['admin_password'],
+            ));
+        } catch (Exception $e) {
+            (new Redirect())->to('/login')->send();
         }
     }
 }
