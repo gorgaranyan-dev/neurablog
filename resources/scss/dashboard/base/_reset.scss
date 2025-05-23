@@ -14,3 +14,46 @@ a, abbr, acronym, address, applet, b, big, blockquote, caption, center, cite, co
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+
+/* Сброс стилей для кнопок */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+  outline: none;
+
+  box-shadow: none;
+  border-radius: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
