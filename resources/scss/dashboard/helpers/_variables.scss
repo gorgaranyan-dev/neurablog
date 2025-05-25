@@ -9,11 +9,15 @@
   --desc-color: #9f9f9f;
   --red-rgb: 255, 59, 48;
   --red: rgba(var(--red-rgb), 1);
-  --primary-color:#602F6B;
-  --primary-border:#E2E8F0;
-  --secondary-color:var(--white);
-  --tertiary-color:#A0AEC0;
-  --dashboard-bg:#F8F9FA;
+  --primary-color: #602F6B;
+  --primary-border: #E2E8F0;
+  --secondary-color: var(--white);
+  --tertiary-color: #A0AEC0;
+  --dashboard-bg: #F8F9FA;
+
+  //nav colors
+  --nav-item-hover-bg: #e7e6e6;
+  --nav-item-active-bg: rgba(96, 47, 107, 50%);
 
   //Components
   //Tab
@@ -133,22 +137,22 @@
   --t-card-icon-bg: #F3F3F3;
 
   //AI Settings
-  --cb-ais-question-border: #535353;
-  --cb-ais-question-color: #535353;
+  --question-border: #535353;
+  --question-color: #535353;
 
   //Advanced
-  --a-ftds-table-header-color: #B8B8B8;
-  --a-ftds-table-body-item-default-bg: rgba(239, 239, 239, 0.3);
-  --a-ftds-table-body-item-hover-bg: rgba(239, 239, 239, 0.8);
-  --a-ei-warning-color: #FFA50C;
-  --a-ei-warning-hover: #E3920A;
-  --a-ei-error-color: #FF303A;
-  --a-ei-error-hover: #D4272F;
+  --table-header-color: #B8B8B8;
+  --table-body-item-default-bg: rgba(239, 239, 239, 0.3);
+  --table-body-item-hover-bg: rgba(239, 239, 239, 0.8);
+  --warning-color: #FFA50C;
+  --warning-hover: #E3920A;
+  --error-color: #FF303A;
+  --error-hover: #D4272F;
 
   //field
-  --cb-cl-ct-field-bg: #F4F4F4;
-  --cb-cl-ct-field-color-active: #007AFF;
-  --cb-cl-ct-field-color-disabled: #73757A;
+  --field-bg: #F4F4F4;
+  --field-color-active: #007AFF;
+  --field-color-disabled: #73757A;
 
   //Table Accordion
   --table-accordion-border: #EAEAEA;
@@ -164,13 +168,23 @@
   --button-color-hover: #737373;
   --button-color-active: #8d8c8c;
 
+  //tables color
+
+  --table-title-color:#2c3e50;
+  --table-desc-color:#7f8c8d;
+  --table-border-color:#d1d9e6;
   //Font Size
   --fs-12: 12px;
   --fs-13: 13px;
   --fs-14: 14px;
   --fs-16: 16px;
   --fs-20: 20px;
-  --fs-32:32px;
+  --fs-22: 22px;
+  --fs-24: 24px;
+  --fs-26: 26px;
+  --fs-28: 28px;
+  --fs-30: 30px;
+  --fs-32: 32px;
 
   //Font Weight
   --fw-100: 100;
