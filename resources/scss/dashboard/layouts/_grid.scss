@@ -50,6 +50,8 @@
 .container {
   height: 100%;
   display: grid;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   @include min-width($wp-breakpoint) {
     grid-template-columns: 272px 1fr;

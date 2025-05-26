@@ -59,6 +59,10 @@
   &-project-name {
     display: flex;
     align-items: center;
+
+    &:not(:last-child) {
+      margin-block-end: 5px;
+    }
   }
 
   &-project-icon {

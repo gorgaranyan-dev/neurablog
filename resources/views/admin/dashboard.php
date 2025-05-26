@@ -171,30 +171,37 @@ View::section( 'title', 'Dashboard' );
             <div class="content">
                 <div class="content-body">
                     <div class="content-body-in">
-
                         <div class="content-body-inner" id="posts">
                             <div class="table-content">
-
                                 <div class="table-header">
                                     <div class="table-header-in">
                                         <h2 class="table-header-title">PROJECTS</h2>
                                         <span class="table-header-desc">30 Done this month</span>
                                     </div>
-                                    <div>
-                                        <!-- Placeholder for potential buttons or icons -->
+                                    <div class="search-panel">
+                                        <div class="search-panel-in">
+                                            <svg class="search-i" viewBox="0 0 16 16" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.6293 13.0959L10.8728 10.3394C11.5365 9.45586 11.8947 8.38047 11.8935 7.27549C11.8935 4.45303 9.59721 2.15674 6.77475 2.15674C3.95229 2.15674 1.65601 4.45303 1.65601 7.27549C1.65601 10.0979 3.95229 12.3942 6.77475 12.3942C7.87974 12.3954 8.95513 12.0372 9.83862 11.3735L12.5952 14.1301C12.7347 14.2548 12.9167 14.3214 13.1038 14.3162C13.2909 14.3109 13.4688 14.2343 13.6012 14.1019C13.7335 13.9696 13.8102 13.7916 13.8154 13.6045C13.8207 13.4174 13.7541 13.2354 13.6293 13.0959ZM3.11851 7.27549C3.11851 6.55235 3.33294 5.84545 3.73469 5.24418C4.13645 4.64292 4.70748 4.17429 5.37557 3.89755C6.04366 3.62082 6.77881 3.54841 7.48805 3.68949C8.1973 3.83057 8.84878 4.17879 9.36011 4.69013C9.87145 5.20146 10.2197 5.85294 10.3607 6.56219C10.5018 7.27143 10.4294 8.00658 10.1527 8.67467C9.87595 9.34276 9.40732 9.91379 8.80606 10.3155C8.20479 10.7173 7.49789 10.9317 6.77475 10.9317C5.80541 10.9306 4.87611 10.545 4.19068 9.85956C3.50525 9.17413 3.11967 8.24483 3.11851 7.27549Z"
+                                                      fill="#2D3748"/>
+                                            </svg>
+                                            <input type="text" class="input-reset search" placeholder="Search">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="table-body">
                                     <div class="table-body-in">
-
                                         <table class="table">
                                             <thead class="table-head">
                                             <tr class="table-head-tr">
                                                 <th class="table-head-items">
                                                     <input type="checkbox">
                                                 </th>
-                                                <th class="table-head-items">Your Blogs</th>
-                                                <th class="table-head-items">Actions</th>
+                                                <th class="table-head-items">Title</th>
+                                                <th class="table-head-items">Views</th>
+                                                <th class="table-head-items">Created At</th>
+                                                <th class="table-head-items">Author</th>
+                                                <th class="table-head-items">Categories</th>
                                             </tr>
                                             </thead>
                                             <tbody class="table-body">
@@ -204,10 +211,8 @@ View::section( 'title', 'Dashboard' );
                                                 </td>
                                                 <td class="table-body-items">
                                                     <div class="table-project-name">
-                                                        Blog One
+                                                        Blog Nine
                                                     </div>
-                                                </td>
-                                                <td class="table-body-items">
                                                     <div class="table-progress-bar">
                                                         <a href="#" class="table-actions">
                                                             <span>Edit</span>
@@ -219,7 +224,20 @@ View::section( 'title', 'Dashboard' );
                                                         |
                                                         <a href="#" class="table-actions">
                                                             <span>Trash</span>
-                                                        </a>                                                    </div>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
                                                 </td>
                                             </tr>
                                             <tr class="table-body-tr">
@@ -228,10 +246,9 @@ View::section( 'title', 'Dashboard' );
                                                 </td>
                                                 <td class="table-body-items">
                                                     <div class="table-project-name">
-                                                        Blog Two
+                                                        Blog Ten
                                                     </div>
-                                                </td>
-                                                <td class="table-body-items">
+
                                                     <div class="table-progress-bar">
                                                         <a href="#" class="table-actions">
                                                             <span>Edit</span>
@@ -243,7 +260,19 @@ View::section( 'title', 'Dashboard' );
                                                         |
                                                         <a href="#" class="table-actions">
                                                             <span>Trash</span>
-                                                        </a>                                                    </div>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
                                                 </td>
                                             </tr>
                                             <tr class="table-body-tr">
@@ -252,10 +281,9 @@ View::section( 'title', 'Dashboard' );
                                                 </td>
                                                 <td class="table-body-items">
                                                     <div class="table-project-name">
-                                                        Blog Three
+                                                        Blog Eleven
                                                     </div>
-                                                </td>
-                                                <td class="table-body-items">
+
                                                     <div class="table-progress-bar">
                                                         <a href="#" class="table-actions">
                                                             <span>Edit</span>
@@ -267,7 +295,20 @@ View::section( 'title', 'Dashboard' );
                                                         |
                                                         <a href="#" class="table-actions">
                                                             <span>Trash</span>
-                                                        </a>                                                    </div>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
                                                 </td>
                                             </tr>
                                             <tr class="table-body-tr">
@@ -276,10 +317,8 @@ View::section( 'title', 'Dashboard' );
                                                 </td>
                                                 <td class="table-body-items">
                                                     <div class="table-project-name">
-                                                        Blog Foure
+                                                        Blog Twenty
                                                     </div>
-                                                </td>
-                                                <td class="table-body-items">
                                                     <div class="table-progress-bar">
                                                         <a href="#" class="table-actions">
                                                             <span>Edit</span>
@@ -291,11 +330,37 @@ View::section( 'title', 'Dashboard' );
                                                         |
                                                         <a href="#" class="table-actions">
                                                             <span>Trash</span>
-                                                        </a>                                                    </div>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
                                                 </td>
                                             </tr>
                                             </tbody>
                                         </table>
+                                        <div class="pagination">
+                                            <div class="pagination-in">
+                                                <button class="pagination-item">
+                                                    <span>1</span>
+                                                </button>
+                                                <button class="pagination-item">
+                                                    <span>2</span>
+                                                </button>
+                                                <button class="pagination-item">
+                                                    <span>3</span>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -351,17 +416,267 @@ View::section( 'title', 'Dashboard' );
         const selectors = {
             navItems: '.nav-item-in',
             dropdownItems: '.nav-dropdown-item-in',
-            tabContents: '.content-body-inner'
+            tabContents: '.content-body-inner',
+            searchInput: '.search',
+            tableRows: '.table-body-tr',
+            tableBody: '.table-body',
+            paginationContainer: '.pagination',
+            paginationInner: '.pagination-in',
+            paginationItems: '.pagination-item'
         };
 
-        const navItems = document.querySelectorAll(selectors.navItems);
-        const dropdownItems = document.querySelectorAll(selectors.dropdownItems);
-        const tabContents = document.querySelectorAll(selectors.tabContents);
+        let navItems = document.querySelectorAll(selectors.navItems);
+        let dropdownItems = document.querySelectorAll(selectors.dropdownItems);
+        let tabContents = document.querySelectorAll(selectors.tabContents);
+        let selectAllCheckbox = document.querySelector('.table-head-items input[type="checkbox"]');
+        let searchInput = document.querySelector(selectors.searchInput);
+        let tableBody = document.querySelector(selectors.tableBody);
+        let paginationContainer = document.querySelector(selectors.paginationContainer);
+        let paginationInner = document.querySelector(selectors.paginationInner);
+        let tableRows = document.querySelectorAll(selectors.tableRows);
+
+        // Pagination settings
+        const rowsPerPage = 10;
+        let currentPage = 1;
+        const maxVisiblePages = 3;
+
+        // Debounce function to optimize search and pagination performance
+        const debounce = (func, wait) => {
+            let timeout;
+            return (...args) => {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(null, args), wait);
+            };
+        };
+
+        // Update table rows collection
+        const updateTableRowsCollection = () => {
+            tableRows = document.querySelectorAll(selectors.tableRows);
+            console.log(`Updated table rows: ${tableRows.length} rows found`); // Debug log
+        };
+
+        // Update visible table rows based on current page
+        const updateTableRows = () => {
+            updateTableRowsCollection();
+            const start = (currentPage - 1) * rowsPerPage;
+            const end = start + rowsPerPage;
+
+            tableRows.forEach((row, index) => {
+                const isVisible = row.dataset.searchVisible !== 'false'; // Respect search filter
+                row.classList.toggle('d-none', !(isVisible && index >= start && index < end));
+            });
+
+            console.log(`Showing rows ${start} to ${end} of ${tableRows.length} total rows`); // Debug log
+        };
+
+        // Update pagination controls
+        const updatePagination = () => {
+            updateTableRowsCollection();
+            const visibleRows = Array.from(tableRows).filter(row => row.dataset.searchVisible !== 'false');
+            const totalPages = Math.ceil(visibleRows.length / rowsPerPage) || 1;
+            currentPage = Math.min(currentPage, totalPages);
+
+            // Clear existing pagination items
+            if (paginationInner) {
+                paginationInner.innerHTML = '';
+            } else {
+                return;
+            }
+
+            // Calculate pages to display
+            const pages = [];
+            const range = Math.floor(maxVisiblePages / 2); // Pages before/after current
+            let startPage = Math.max(1, currentPage - range);
+            let endPage = Math.min(totalPages, currentPage + range);
+
+            // Adjust range if near start or end
+            if (currentPage <= range + 1) {
+                endPage = Math.min(totalPages, maxVisiblePages);
+            } else if (currentPage > totalPages - range) {
+                startPage = Math.max(1, totalPages - maxVisiblePages + 1);
+            }
+
+            // Always include first page
+            if (startPage > 1) {
+                pages.push(1);
+                if (startPage > 2) {
+                    pages.push('...'); // Ellipsis before range
+                }
+            }
+
+            // Add pages in range
+            for (let i = startPage; i <= endPage; i++) {
+                pages.push(i);
+            }
+
+            // Always include last page
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    pages.push('...'); // Ellipsis after range
+                }
+                pages.push(totalPages);
+            }
+
+            // Create pagination buttons
+            pages.forEach(page => {
+                if (page === '...') {
+                    const pageButton = document.createElement('button');
+                    pageButton.className = page === currentPage ? 'pagination-item active' : 'pagination-item';
+                    pageButton.innerHTML = `<span>...</span>`;
+
+                    paginationInner.appendChild(pageButton);
+                } else {
+                    const pageButton = document.createElement('button');
+                    pageButton.className = page === currentPage ? 'pagination-item active' : 'pagination-item';
+                    pageButton.innerHTML = `<span>${page}</span>`;
+                    pageButton.setAttribute('aria-label', `Page ${page}`);
+                    pageButton.addEventListener('click', () => {
+                        currentPage = page;
+                        updateTableRows();
+                        updatePagination();
+                    });
+                    paginationInner.appendChild(pageButton);
+                }
+            });
+
+            // Update ARIA attributes
+            paginationInner.querySelectorAll('.pagination-item').forEach(button => {
+                button.setAttribute('aria-current', button.classList.contains('active') ? 'true' : 'false');
+            });
+
+            // Show pagination
+            if (paginationContainer) {
+                paginationContainer.style.display = '';
+            }
+
+            if (paginationContainer) {
+                paginationContainer.classList.toggle('d-none', totalPages <= 1);
+            }
+        };
+
+        // Search functionality
+        const performSearch = (searchTerm) => {
+            updateTableRowsCollection();
+            const term = searchTerm.toLowerCase().trim();
+
+            tableRows.forEach(row => {
+                const rowText = Array.from(row.cells)
+                    .map(cell => cell.textContent.toLowerCase())
+                    .join(' ');
+                const isVisible = term === '' || rowText.includes(term);
+                row.dataset.searchVisible = isVisible; // Store visibility state
+                // Don't set display here; let updateTableRows handle it
+            });
+
+            // Reset to first page and update pagination
+            currentPage = 1;
+            updateTableRows();
+            updatePagination();
+
+            // Update select all checkbox state
+            if (selectAllCheckbox) {
+                selectAllCheckbox.checked = false;
+                selectAllCheckbox.indeterminate = false;
+            }
+
+            // Update clear button visibility
+            if (searchInput) {
+                const clearButton = document.querySelector('.search-clear');
+                if (clearButton) {
+
+                    clearButton.classList.toggle('d-none', !searchTerm);
+                }
+            }
+        };
+
+        // Initialize search event listener and clear button
+        if (searchInput) {
+            const clearButton = document.createElement('button');
+            clearButton.textContent = '✕';
+            clearButton.className = 'search-clear';
+            clearButton.classList.add('d-none')
+            clearButton.setAttribute('aria-label', 'Clear search');
+            searchInput.parentElement.appendChild(clearButton);
+
+            searchInput.addEventListener('input', debounce((e) => {
+                performSearch(e.target.value);
+            }, 300));
+
+            clearButton.addEventListener('click', () => {
+                searchInput.value = '';
+                performSearch('');
+                searchInput.focus();
+            });
+        } else {
+            console.warn('Search input element not found');
+        }
+
+        // Rebind checkbox and trash button events
+        const rebindRowEvents = () => {
+            const rowCheckboxes = document.querySelectorAll('.table-body-items input[type="checkbox"]');
+            const trashButtons = document.querySelectorAll('.table-actions span:last-child');
+
+            // Rebind checkbox change events
+            rowCheckboxes.forEach(checkbox => {
+                checkbox.removeEventListener('change', updateSelectAllStatus); // Prevent duplicate listeners
+                checkbox.addEventListener('change', updateSelectAllStatus);
+            });
+
+            // Rebind trash button events
+            trashButtons.forEach(button => {
+                button.removeEventListener('click', handleTrashClick); // Prevent duplicate listeners
+                button.addEventListener('click', handleTrashClick);
+            });
+        };
+
+        // Checkbox change handler
+        const updateSelectAllStatus = () => {
+            const visibleCheckboxes = Array.from(document.querySelectorAll('.table-body-tr')).filter(row => {
+                return row.dataset.searchVisible !== 'false';
+            }).map(row => row.querySelector('input[type="checkbox"]')).filter(cb => cb); // убираем null
+
+            const allChecked = visibleCheckboxes.every(cb => cb.checked);
+            const someChecked = visibleCheckboxes.some(cb => cb.checked);
+
+            if (selectAllCheckbox) {
+                selectAllCheckbox.checked = allChecked;
+                selectAllCheckbox.indeterminate = someChecked && !allChecked;
+            }
+        };
+
+
+        // Trash button handler
+        const handleTrashClick = (e) => {
+            e.preventDefault();
+            const checkedRows = document.querySelectorAll('.table-body-tr input[type="checkbox"]:checked');
+            checkedRows.forEach(checkbox => {
+                checkbox.closest('.table-body-tr').remove();
+            });
+            if (selectAllCheckbox) {
+                selectAllCheckbox.checked = false;
+                selectAllCheckbox.indeterminate = false;
+            }
+            updateTableRows();
+            updatePagination();
+            rebindRowEvents();
+        };
+
+        // Select all checkbox handler
+        if (selectAllCheckbox) {
+            selectAllCheckbox.addEventListener('change', (e) => {
+                const rowCheckboxes = document.querySelectorAll('.table-body-items input[type="checkbox"]');
+                rowCheckboxes.forEach(checkbox => {
+                    const row = checkbox.closest('.table-body-tr');
+                    if (row.style.display !== 'none') {
+                        checkbox.checked = e.target.checked;
+                    }
+                });
+            });
+        }
 
         // Early return if required elements are missing
         if (!navItems.length || !dropdownItems.length || !tabContents.length) {
             console.warn('Required navigation elements not found');
-            return;
         }
 
         // Toggle navigation dropdown
@@ -385,17 +700,14 @@ View::section( 'title', 'Dashboard' );
 
             if (item.classList.contains('active')) return;
 
-            // Update active states for dropdown items
             dropdownItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
             });
             item.classList.add('active');
 
-            // Handle tab content
             const tabId = item.dataset.tab;
             if (!tabId) return;
 
-            // Update active states for tab contents
             tabContents.forEach(content => {
                 content.classList.remove('active');
             });
@@ -404,6 +716,15 @@ View::section( 'title', 'Dashboard' );
             if (targetTab) {
                 targetTab.classList.add('active');
                 console.log(`Switched to tab: ${tabId}`);
+                // Reset search and pagination when switching tabs
+                if (searchInput) {
+                    searchInput.value = '';
+                    performSearch('');
+                }
+                currentPage = 1;
+                updateTableRows();
+                updatePagination();
+                searchInput.focus();
             } else {
                 console.warn(`Tab content not found for ID: ${tabId}`);
             }
@@ -411,11 +732,11 @@ View::section( 'title', 'Dashboard' );
 
         // Initialize event listeners
         navItems.forEach(item => {
-            item.addEventListener('click', () => toggleNavDropdown(item), { passive: true });
+            item.addEventListener('click', () => toggleNavDropdown(item), {passive: true});
         });
 
         dropdownItems.forEach(item => {
-            item.addEventListener('click', (event) => switchTab(item, event), { passive: false });
+            item.addEventListener('click', (event) => switchTab(item, event), {passive: false});
         });
 
         // Initialize first tab
@@ -431,5 +752,12 @@ View::section( 'title', 'Dashboard' );
             }
         };
 
+        // Initialize table and pagination
+        updateTableRowsCollection();
+        tableRows.forEach(row => row.dataset.searchVisible = 'true'); // Initialize search visibility
+        updateTableRows();
+        updatePagination();
+        rebindRowEvents();
         initializeFirstTab();
-    });</script>
+    });
+</script>
