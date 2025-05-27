@@ -16,4 +16,12 @@ class AdminController extends Controller
             $this->redirect()->back()->with('error', $e->getMessage())->send();
         }
     }
+
+    public function addNewPostView(Request $request){
+        try {
+            return $this->view('admin.add-new');
+        } catch (Exception $e) {
+            $this->redirect()->back()->with('error', $e->getMessage())->send();
+        }
+    }
 }
