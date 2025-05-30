@@ -9,9 +9,9 @@ View::section( 'title', 'Dashboard' );
 <div class="dashboard">
     <div class="container">
         <div class="nav-layout">
-            <div class="nav-header">
+            <div class="nav-header nav-in">
                 <div class="nav-header-logo">
-                    <h1>NEWRABLOG</h1>
+                    <h1 class="text-center">Our logo here</h1>
                 </div>
                 <div class="nav-mobile-toggle">
                     <button class="nav-mobile-toggle-in"></button>
@@ -172,23 +172,61 @@ View::section( 'title', 'Dashboard' );
                 <div class="content-body">
                     <div class="content-body-in">
                         <div class="content-body-inner" id="posts">
-                            <div class="table-content">
-                                <div class="table-header">
-                                    <div class="table-header-in">
-                                        <h2 class="table-header-title">PROJECTS</h2>
-                                        <span class="table-header-desc">30 Done this month</span>
+                            <div class="posts-toolbar">
+                                <div class="posts-toolbar-left">
+                                    <h1 class="posts-title">
+                                        Posts <a href="#" class="btn btn-primary">Add New</a>
+                                    </h1>
+
+                                    <div class="post-status-tabs">
+                                        <a href="#" class="tab active">All</a>
+                                        <span class="post-status-tabs-divider"> | </span>
+                                        <a href="#" class="tab">Published</a>
+                                        <span class="post-status-tabs-divider"> | </span>
+                                        <a href="#" class="tab">Draft</a>
                                     </div>
-                                    <div class="search-panel">
-                                        <div class="search-panel-in">
-                                            <svg class="search-i" viewBox="0 0 16 16" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13.6293 13.0959L10.8728 10.3394C11.5365 9.45586 11.8947 8.38047 11.8935 7.27549C11.8935 4.45303 9.59721 2.15674 6.77475 2.15674C3.95229 2.15674 1.65601 4.45303 1.65601 7.27549C1.65601 10.0979 3.95229 12.3942 6.77475 12.3942C7.87974 12.3954 8.95513 12.0372 9.83862 11.3735L12.5952 14.1301C12.7347 14.2548 12.9167 14.3214 13.1038 14.3162C13.2909 14.3109 13.4688 14.2343 13.6012 14.1019C13.7335 13.9696 13.8102 13.7916 13.8154 13.6045C13.8207 13.4174 13.7541 13.2354 13.6293 13.0959ZM3.11851 7.27549C3.11851 6.55235 3.33294 5.84545 3.73469 5.24418C4.13645 4.64292 4.70748 4.17429 5.37557 3.89755C6.04366 3.62082 6.77881 3.54841 7.48805 3.68949C8.1973 3.83057 8.84878 4.17879 9.36011 4.69013C9.87145 5.20146 10.2197 5.85294 10.3607 6.56219C10.5018 7.27143 10.4294 8.00658 10.1527 8.67467C9.87595 9.34276 9.40732 9.91379 8.80606 10.3155C8.20479 10.7173 7.49789 10.9317 6.77475 10.9317C5.80541 10.9306 4.87611 10.545 4.19068 9.85956C3.50525 9.17413 3.11967 8.24483 3.11851 7.27549Z"
-                                                      fill="#2D3748"/>
-                                            </svg>
-                                            <input type="text" class="input-reset search" placeholder="Search">
-                                        </div>
+
+                                    <div class="bulk-filters">
+                                        <select class="select-control">
+                                            <option value="">Bulk Actions</option>
+                                            <option value="delete">Delete</option>
+                                            <option value="edit">Edit</option>
+                                        </select>
+                                        <button class="btn btn-primary">Apply</button>
+                                        <select class="select-control ml-22">
+                                            <option value="">All Categories</option>
+                                            <option>News</option>
+                                            <option>Tutorials</option>
+                                            <option>Reviews</option>
+                                        </select>
+                                        <select class="select-control">
+                                            <option value="">All Authors</option>
+                                            <option>Admin</option>
+                                            <option>Editor</option>
+                                        </select>
+                                        <button class="btn btn-primary">Filter</button>
                                     </div>
                                 </div>
+
+                                <div class="posts-toolbar-right">
+                                    <div><input type="text" class="search-box" placeholder="Search posts..." /><button class="btn btn-primary ml-12">Search</button></div>
+
+                                    <div class="pagination-container">
+                                        <span class="pagination-info">Showing 11–20 of 100 results</span>
+                                        <ul class="pagination">
+                                            <li><a href="#">«</a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#" class="active">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="table-content">
                                 <div class="table-body">
                                     <div class="table-body-in">
                                         <table class="table">
@@ -274,8 +312,1178 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Ten
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a></div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
                                             </tr>
                                             <tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>Trash</span>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr><tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -348,21 +1556,19 @@ View::section( 'title', 'Dashboard' );
                                             </tr>
                                             </tbody>
                                         </table>
-                                        <div class="pagination">
-                                            <div class="pagination-in">
-                                                <button class="pagination-item">
-                                                    <span>1</span>
-                                                </button>
-                                                <button class="pagination-item">
-                                                    <span>2</span>
-                                                </button>
-                                                <button class="pagination-item">
-                                                    <span>3</span>
-                                                </button>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="pagination-container">
+                                <span class="pagination-info">Showing 11–20 of 100 results</span>
+                                <ul class="pagination">
+                                    <li><a href="#">«</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#" class="active">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">»</a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="content-body-inner" id="add-post">
@@ -420,9 +1626,6 @@ View::section( 'title', 'Dashboard' );
             searchInput: '.search',
             tableRows: '.table-body-tr',
             tableBody: '.table-body',
-            paginationContainer: '.pagination',
-            paginationInner: '.pagination-in',
-            paginationItems: '.pagination-item'
         };
 
         let navItems = document.querySelectorAll(selectors.navItems);
@@ -431,11 +1634,8 @@ View::section( 'title', 'Dashboard' );
         let selectAllCheckbox = document.querySelector('.table-head-items input[type="checkbox"]');
         let searchInput = document.querySelector(selectors.searchInput);
         let tableBody = document.querySelector(selectors.tableBody);
-        let paginationContainer = document.querySelector(selectors.paginationContainer);
-        let paginationInner = document.querySelector(selectors.paginationInner);
         let tableRows = document.querySelectorAll(selectors.tableRows);
 
-        // Pagination settings
         const rowsPerPage = 10;
         let currentPage = 1;
         const maxVisiblePages = 3;
@@ -470,89 +1670,6 @@ View::section( 'title', 'Dashboard' );
         };
 
         // Update pagination controls
-        const updatePagination = () => {
-            updateTableRowsCollection();
-            const visibleRows = Array.from(tableRows).filter(row => row.dataset.searchVisible !== 'false');
-            const totalPages = Math.ceil(visibleRows.length / rowsPerPage) || 1;
-            currentPage = Math.min(currentPage, totalPages);
-
-            // Clear existing pagination items
-            if (paginationInner) {
-                paginationInner.innerHTML = '';
-            } else {
-                return;
-            }
-
-            // Calculate pages to display
-            const pages = [];
-            const range = Math.floor(maxVisiblePages / 2); // Pages before/after current
-            let startPage = Math.max(1, currentPage - range);
-            let endPage = Math.min(totalPages, currentPage + range);
-
-            // Adjust range if near start or end
-            if (currentPage <= range + 1) {
-                endPage = Math.min(totalPages, maxVisiblePages);
-            } else if (currentPage > totalPages - range) {
-                startPage = Math.max(1, totalPages - maxVisiblePages + 1);
-            }
-
-            // Always include first page
-            if (startPage > 1) {
-                pages.push(1);
-                if (startPage > 2) {
-                    pages.push('...'); // Ellipsis before range
-                }
-            }
-
-            // Add pages in range
-            for (let i = startPage; i <= endPage; i++) {
-                pages.push(i);
-            }
-
-            // Always include last page
-            if (endPage < totalPages) {
-                if (endPage < totalPages - 1) {
-                    pages.push('...'); // Ellipsis after range
-                }
-                pages.push(totalPages);
-            }
-
-            // Create pagination buttons
-            pages.forEach(page => {
-                if (page === '...') {
-                    const pageButton = document.createElement('button');
-                    pageButton.className = page === currentPage ? 'pagination-item active' : 'pagination-item';
-                    pageButton.innerHTML = `<span>...</span>`;
-
-                    paginationInner.appendChild(pageButton);
-                } else {
-                    const pageButton = document.createElement('button');
-                    pageButton.className = page === currentPage ? 'pagination-item active' : 'pagination-item';
-                    pageButton.innerHTML = `<span>${page}</span>`;
-                    pageButton.setAttribute('aria-label', `Page ${page}`);
-                    pageButton.addEventListener('click', () => {
-                        currentPage = page;
-                        updateTableRows();
-                        updatePagination();
-                    });
-                    paginationInner.appendChild(pageButton);
-                }
-            });
-
-            // Update ARIA attributes
-            paginationInner.querySelectorAll('.pagination-item').forEach(button => {
-                button.setAttribute('aria-current', button.classList.contains('active') ? 'true' : 'false');
-            });
-
-            // Show pagination
-            if (paginationContainer) {
-                paginationContainer.style.display = '';
-            }
-
-            if (paginationContainer) {
-                paginationContainer.classList.toggle('d-none', totalPages <= 1);
-            }
-        };
 
         // Search functionality
         const performSearch = (searchTerm) => {
@@ -569,9 +1686,7 @@ View::section( 'title', 'Dashboard' );
             });
 
             // Reset to first page and update pagination
-            currentPage = 1;
             updateTableRows();
-            updatePagination();
 
             // Update select all checkbox state
             if (selectAllCheckbox) {
@@ -657,7 +1772,6 @@ View::section( 'title', 'Dashboard' );
                 selectAllCheckbox.indeterminate = false;
             }
             updateTableRows();
-            updatePagination();
             rebindRowEvents();
         };
 
@@ -723,7 +1837,6 @@ View::section( 'title', 'Dashboard' );
                 }
                 currentPage = 1;
                 updateTableRows();
-                updatePagination();
                 searchInput.focus();
             } else {
                 console.warn(`Tab content not found for ID: ${tabId}`);
@@ -752,11 +1865,9 @@ View::section( 'title', 'Dashboard' );
             }
         };
 
-        // Initialize table and pagination
         updateTableRowsCollection();
         tableRows.forEach(row => row.dataset.searchVisible = 'true'); // Initialize search visibility
         updateTableRows();
-        updatePagination();
         rebindRowEvents();
         initializeFirstTab();
     });
