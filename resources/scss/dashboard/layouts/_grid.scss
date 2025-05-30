@@ -2,7 +2,7 @@
 .dashboard {
   position: fixed;
   padding-block: 24px;
-  top: 46px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -14,10 +14,10 @@
   }
 
   @include min-width($wp-breakpoint) {
-    top: 32px;
+    //top: 32px;
     right: unset;
     left: 20px;
-    padding-block: 16px;
+    //padding-block: 16px;
     width: calc(100% - 20px);
   }
 }
@@ -55,7 +55,6 @@
 
   @include min-width($wp-breakpoint) {
     grid-template-columns: 272px 1fr;
-    padding-inline: 24px;
   }
   @include max-width($wp-breakpoint) {
     grid-template-rows: auto 1fr;
