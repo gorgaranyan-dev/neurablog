@@ -1,16 +1,26 @@
 .nav {
+
+  &-header {
+    &-logo {
+      &-in {
+        font-size: var(--fs-24);
+        font-weight: var(--fw-600);
+        margin-block-end: 30px;
+      }
+    }
+  }
+
   &-layout {
-    padding-top: 40px;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     margin-block-start: 26px;
-    padding-block: 20px;
+    padding-block-start: 40px;
+    padding-block-end: 20px;
     height: max-content;
-    z-index: 100;
     background-color: var(--sidebar-bg);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    z-index: 100;
   }
 
   &-in {

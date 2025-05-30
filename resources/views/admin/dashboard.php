@@ -11,7 +11,7 @@ View::section( 'title', 'Dashboard' );
         <div class="nav-layout">
             <div class="nav-header nav-in">
                 <div class="nav-header-logo">
-                    <h1 class="text-center">Our logo here</h1>
+                    <h1 class=" nav-header-logo-in text-center">Our logo here</h1>
                 </div>
                 <div class="nav-mobile-toggle">
                     <button class="nav-mobile-toggle-in"></button>
@@ -214,12 +214,12 @@ View::section( 'title', 'Dashboard' );
                                     <div class="pagination-container">
                                         <span class="pagination-info">Showing 11–20 of 100 results</span>
                                         <ul class="pagination">
-                                            <li><a href="#">«</a></li>
-                                            <li><a href="#">1</a></li>
-                                            <li><a href="#" class="active">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">»</a></li>
+                                            <li class="pagination-in"><a class="pagination-item" href="#">«</a></li>
+                                            <li class="pagination-in"><a class="pagination-item" href="#">1</a></li>
+                                            <li class="pagination-in"><a class="pagination-item" href="#" class="active">2</a></li>
+                                            <li class="pagination-in"><a class="pagination-item" href="#">3</a></li>
+                                            <li class="pagination-in"><a class="pagination-item" href="#">4</a></li>
+                                            <li class="pagination-in"><a class="pagination-item" href="#">»</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1562,12 +1562,12 @@ View::section( 'title', 'Dashboard' );
                             <div class="pagination-container">
                                 <span class="pagination-info">Showing 11–20 of 100 results</span>
                                 <ul class="pagination">
-                                    <li><a href="#">«</a></li>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#" class="active">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">»</a></li>
+                                    <li class="pagination-in"><a class="pagination-item" href="#">«</a></li>
+                                    <li class="pagination-in"><a class="pagination-item" href="#">1</a></li>
+                                    <li class="pagination-in"><a class="pagination-item" href="#" class="active">2</a></li>
+                                    <li class="pagination-in"><a class="pagination-item" href="#">3</a></li>
+                                    <li class="pagination-in"><a class="pagination-item" href="#">4</a></li>
+                                    <li class="pagination-in"><a class="pagination-item" href="#">»</a></li>
                                 </ul>
                             </div>
                         </div>
