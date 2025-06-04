@@ -2,7 +2,7 @@
 
 use App\Core\View;
 
-View::layout('layouts.dashboard');
+View::layout('layouts.auth');
 View::section('title', 'Login Page');
 ?>
 <div class="row">

@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Installer;
 
-use App\Core\Http\FormRequest;
+use App\Core\Http\Request\FormRequest;
 
 class PostRequest extends FormRequest
 {

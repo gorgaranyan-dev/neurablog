@@ -7,6 +7,7 @@ export default {
         emptyOutDir: true,
         rollupOptions: {
             input: {
+                auth: path.resolve(__dirname, 'resources/js/auth/auth.js'),
                 dashboard: path.resolve(__dirname, 'resources/js/dashboard/dashboard.js'),
                 public: path.resolve(__dirname, 'resources/js/public/public.js'),
             },

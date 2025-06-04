@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Core\Http\Request;
 use App\Http\Requests\Installer\PostRequest;
 use App\Services\Installer;
+use App\Core\Http\Request\Request;
 use Exception;
 
 class InstallController extends Controller
@@ -19,18 +19,18 @@ class InstallController extends Controller
     public function redirectInstall(Request $request)
     {
         try {
-            $this->redirect()->to('install')->send();
+            return redirect()->to('install');
         } catch (Exception $e) {
-            $this->redirect()->back()->with('_error', $e->getMessage())->send();
+            return redirect()->back()->with('_error', $e->getMessage());
         }
     }
 
     public function showForm(Request $request)
     {
         try {
-            return $this->view('auth.install');
+            return view('auth.install');
         } catch (Exception $e) {
-            $this->redirect()->back()->with('_error', $e->getMessage())->send();
+            return redirect()->back()->with('_error', $e->getMessage());
         }
     }
 
@@ -39,9 +39,10 @@ class InstallController extends Controller
         try {
             $form = new PostRequest($request);
             $this->installer->install($form->validate());
-            $this->redirect()->to('/dashboard')->send();
+
+            return redirect()->to('/dashboard');
         } catch (Exception $e) {
-            $this->redirect()->back()->with('_error', $e->getMessage())->withInput()->send();
+            return redirect()->back()->with('_error', $e->getMessage())->withInput();
         }
     }
 }

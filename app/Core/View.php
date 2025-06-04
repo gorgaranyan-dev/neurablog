@@ -93,4 +93,8 @@ class View
 
         return null;
     }
+
+	public static function include( string $string ) {
+		return include self::getPath($string);
+	}
 }

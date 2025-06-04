@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Core\Http\Request;
-use App\Models\User;
+use App\Core\Http\Request\Request;
 use Exception;
 
 class AdminController extends Controller
@@ -11,17 +10,18 @@ class AdminController extends Controller
     public function dashboard(Request $request)
     {
         try {
-            return $this->view('admin.dashboard');
+            return view('admin.dashboard');
         } catch (Exception $e) {
-            $this->redirect()->back()->with('error', $e->getMessage())->send();
+            return redirect()->back()->with('error', $e->getMessage());
         }
     }
 
-    public function addNewPostView(Request $request){
+    public function addNewPostView(Request $request)
+    {
         try {
-            return $this->view('admin.add-new');
+            return view('admin.add-new');
         } catch (Exception $e) {
-            $this->redirect()->back()->with('error', $e->getMessage())->send();
+            return redirect()->back()->with('error', $e->getMessage());
         }
     }
 }

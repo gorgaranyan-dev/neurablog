@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Core\Http\Request;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Services\AuthService;
+use App\Core\Http\Request\Request;
 use Exception;
 
 class AuthController extends Controller
@@ -19,9 +19,13 @@ class AuthController extends Controller
     public function loginView(Request $request)
     {
         try {
-            return $this->view('auth.login');
+            if ($this->authService::check()) {
+                return redirect()->to('dashboard');
+            }
+
+            return view('auth.login');
         } catch (Exception $e) {
-            /// todo later
+            return view('errors.404');
         }
     }
 
@@ -31,9 +35,9 @@ class AuthController extends Controller
             $form = new LoginRequest($request);
             $this->authService->login($form->validated());
 
-            return $this->redirect()->to('/dashboard')->send();
+            return redirect()->to('/dashboard');
         } catch (Exception $e) {
-            $this->redirect()->back()->withInput()->with('error', $e->getMessage())->send();
+            return redirect()->back()->withInput()->with('error', $e->getMessage());
         }
     }
 }

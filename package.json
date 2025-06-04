@@ -16,7 +16,10 @@
     "watch:dashboard": "sass --watch resources/scss/dashboard/dashboard.scss:public/assets/css/dashboard.css",
 
     "watch:js:public": "esbuild resources/js/public/public.js --bundle --outfile=public/assets/js/public.js --watch",
-    "watch:js:dashboard": "esbuild resources/js/dashboard/dashboard.js --bundle --outfile=public/assets/js/dashboard.js --watch"
+    "watch:js:dashboard": "esbuild resources/js/dashboard/dashboard.js --bundle --outfile=public/assets/js/dashboard.js --watch",
+
+    "build:js:auth": "esbuild resources/js/auth/auth.js --bundle --outfile=public/assets/js/auth.js --minify",
+    "watch:js:auth": "esbuild resources/js/auth/auth.js --bundle --outfile=public/assets/js/auth.js --watch"
   },
 
   "devDependencies": {

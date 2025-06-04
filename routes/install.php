@@ -1,7 +1,7 @@
 <?php
 
-use App\Core\Router;
 use App\Http\Controllers\InstallController;
+use App\Core\Http\Router;
 
 $router = new Router();
 
