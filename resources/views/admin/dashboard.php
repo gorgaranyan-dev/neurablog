@@ -186,37 +186,35 @@ View::section( 'title', 'Dashboard' );
                                         <a href="#" class="tab">Draft</a>
                                     </div>
 
-                                    <div class="bulk-filters">
-                                        <select class="select-control">
-                                            <option value="">Bulk Actions</option>
-                                            <option value="delete">Delete</option>
-                                            <option value="edit">Edit</option>
-                                        </select>
-                                        <button class="btn btn-primary">Apply</button>
-                                        <select class="select-control ml-22">
+                                    <div class="select-container select-primary">
+                                        <select class="select-in">
                                             <option value="">All Categories</option>
                                             <option>News</option>
                                             <option>Tutorials</option>
                                             <option>Reviews</option>
                                         </select>
-                                        <select class="select-control">
+                                        <select class="select-in">
                                             <option value="">All Authors</option>
                                             <option>Admin</option>
                                             <option>Editor</option>
                                         </select>
                                         <button class="btn btn-primary">Filter</button>
+                                        <button class="btn btn-primary"><span>Delete</span></button>
                                     </div>
                                 </div>
 
                                 <div class="posts-toolbar-right">
-                                    <div><input type="text" class="search-box" placeholder="Search posts..." /><button class="btn btn-primary ml-12">Search</button></div>
+                                    <div><input type="text" class="search-box" placeholder="Search posts..."/>
+                                        <button class="btn btn-primary ml-12">Search</button>
+                                    </div>
 
                                     <div class="pagination-container">
                                         <span class="pagination-info">Showing 11–20 of 100 results</span>
                                         <ul class="pagination">
                                             <li class="pagination-in"><a class="pagination-item" href="#">«</a></li>
                                             <li class="pagination-in"><a class="pagination-item" href="#">1</a></li>
-                                            <li class="pagination-in"><a class="pagination-item" href="#" class="active">2</a></li>
+                                            <li class="pagination-in"><a class="pagination-item" href="#"
+                                                                         class="active">2</a></li>
                                             <li class="pagination-in"><a class="pagination-item" href="#">3</a></li>
                                             <li class="pagination-in"><a class="pagination-item" href="#">4</a></li>
                                             <li class="pagination-in"><a class="pagination-item" href="#">»</a></li>
@@ -224,8 +222,6 @@ View::section( 'title', 'Dashboard' );
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="table-content">
                                 <div class="table-body">
                                     <div class="table-body-in">
@@ -312,7 +308,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -346,7 +343,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -380,7 +378,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -414,7 +413,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -448,7 +448,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -482,7 +483,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -516,7 +518,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -550,7 +553,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -584,7 +588,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -618,7 +623,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -652,7 +658,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -686,7 +693,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -720,7 +728,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -754,7 +763,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -788,7 +798,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -822,7 +833,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -856,7 +868,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -890,7 +903,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -924,7 +938,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -958,7 +973,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1028,7 +1044,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1063,7 +1080,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1098,7 +1116,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1133,7 +1152,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1168,7 +1188,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1203,7 +1224,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1238,7 +1260,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1273,7 +1296,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1308,7 +1332,45 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
+                                                <td class="table-body-items table-active-users">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <div class="table-project-name">
+                                                        Blog Eleven
+                                                    </div>
+
+                                                    <div class="table-progress-bar">
+                                                        <a href="#" class="table-actions">
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <span>View</span>
+                                                        </a>
+                                                        |
+                                                        <a href="#" class="table-actions">
+                                                            <a href="#" class="table-actions">
+                                                                <span>Trash</span>
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>10.000</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>26.05.2025</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Jon Jons</span>
+                                                </td>
+                                                <td class="table-body-items">
+                                                    <span>Animals</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1343,7 +1405,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1378,7 +1441,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1413,7 +1477,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1448,42 +1513,8 @@ View::section( 'title', 'Dashboard' );
                                                 <td class="table-body-items">
                                                     <span>Animals</span>
                                                 </td>
-                                            </tr><tr class="table-body-tr">
-                                                <td class="table-body-items table-active-users">
-                                                    <input type="checkbox">
-                                                </td>
-                                                <td class="table-body-items">
-                                                    <div class="table-project-name">
-                                                        Blog Eleven
-                                                    </div>
-
-                                                    <div class="table-progress-bar">
-                                                        <a href="#" class="table-actions">
-                                                            <span>Edit</span>
-                                                        </a>
-                                                        |
-                                                        <a href="#" class="table-actions">
-                                                            <span>View</span>
-                                                        </a>
-                                                        |
-                                                        <a href="#" class="table-actions">
-                                                            <span>Trash</span>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                                <td class="table-body-items">
-                                                    <span>10.000</span>
-                                                </td>
-                                                <td class="table-body-items">
-                                                    <span>26.05.2025</span>
-                                                </td>
-                                                <td class="table-body-items">
-                                                    <span>Jon Jons</span>
-                                                </td>
-                                                <td class="table-body-items">
-                                                    <span>Animals</span>
-                                                </td>
-                                            </tr><tr class="table-body-tr">
+                                            </tr>
+                                            <tr class="table-body-tr">
                                                 <td class="table-body-items table-active-users">
                                                     <input type="checkbox">
                                                 </td>
@@ -1564,7 +1595,8 @@ View::section( 'title', 'Dashboard' );
                                 <ul class="pagination">
                                     <li class="pagination-in"><a class="pagination-item" href="#">«</a></li>
                                     <li class="pagination-in"><a class="pagination-item" href="#">1</a></li>
-                                    <li class="pagination-in"><a class="pagination-item" href="#" class="active">2</a></li>
+                                    <li class="pagination-in"><a class="pagination-item" href="#" class="active">2</a>
+                                    </li>
                                     <li class="pagination-in"><a class="pagination-item" href="#">3</a></li>
                                     <li class="pagination-in"><a class="pagination-item" href="#">4</a></li>
                                     <li class="pagination-in"><a class="pagination-item" href="#">»</a></li>
@@ -1572,6 +1604,189 @@ View::section( 'title', 'Dashboard' );
                             </div>
                         </div>
                         <div class="content-body-inner" id="add-post">
+                            <div class="posts-toolbar">
+                                <div class="posts-toolbar-left">
+                                    <h1 class="posts-title">
+                                        Editor
+                                    </h1>
+                                </div>
+
+                                <div class="table-content">
+                                    <div class="editor-column">
+                                        <h2 class="editor-title-in">Title</h2>
+                                        <div class="editor-column-in">
+                                            <div class="editor-title">
+                                                <input class="editor-title-desc input-reset" type="text"
+                                                       placeholder="Title">
+                                            </div>
+
+                                            <div class="editor-actions">
+                                                <div class="editor-actions-in">
+                                                    <button class="button button-secondary button-w-85 h-38">
+                                                        <svg class="button-i" viewBox="0 0 16 16" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8 7.75C8.95703 7.75 9.75 8.54297 9.75 9.5C9.75 10.4844 8.95703 11.25 8 11.25C7.01562 11.25 6.25 10.4844 6.25 9.5C6.25 8.54297 7.01562 7.75 8 7.75ZM13.7148 4.30469C13.9609 4.55078 14.125 4.90625 14.125 5.23438V12.125C14.125 13.1094 13.332 13.875 12.375 13.875H3.625C2.64062 13.875 1.875 13.1094 1.875 12.125V3.375C1.875 2.41797 2.64062 1.625 3.625 1.625H10.5156C10.8438 1.625 11.1992 1.78906 11.418 2.00781L13.7148 4.30469ZM5.375 2.9375V5.125H9.3125V2.9375H5.375ZM12.8125 12.125V5.31641C12.8125 5.26172 12.7852 5.23438 12.7578 5.20703L10.625 3.04688V5.78125C10.625 6.16406 10.3242 6.4375 9.96875 6.4375H4.71875C4.33594 6.4375 4.0625 6.16406 4.0625 5.78125V2.9375H3.625C3.37891 2.9375 3.1875 3.15625 3.1875 3.375V12.125C3.1875 12.3711 3.37891 12.5625 3.625 12.5625H12.375C12.5938 12.5625 12.8125 12.3711 12.8125 12.125Z"/>
+                                                        </svg>
+                                                        <span class="button-label">Draft</span>
+                                                    </button>
+                                                    <button class="button button-secondary button-w-85 h-38">
+                                                        <svg class="button-i" viewBox="0 0 16 16" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.5 7.75C4.5 5.83594 6.05859 4.25 8 4.25C9.91406 4.25 11.5 5.83594 11.5 7.75C11.5 9.69141 9.91406 11.25 8 11.25C6.05859 11.25 4.5 9.69141 4.5 7.75ZM8 9.9375C9.20312 9.9375 10.1875 8.98047 10.1875 7.75C10.1875 6.54688 9.20312 5.5625 8 5.5625C7.97266 5.5625 7.94531 5.5625 7.91797 5.5625C7.97266 5.72656 8 5.86328 8 6C8 6.98438 7.20703 7.75 6.25 7.75C6.08594 7.75 5.94922 7.75 5.8125 7.69531C5.8125 7.72266 5.8125 7.75 5.8125 7.75C5.8125 8.98047 6.76953 9.9375 8 9.9375ZM2.72266 3.83984C4.00781 2.63672 5.78516 1.625 8 1.625C10.1875 1.625 11.9648 2.63672 13.25 3.83984C14.5352 5.01562 15.3828 6.4375 15.793 7.42188C15.875 7.64062 15.875 7.88672 15.793 8.10547C15.3828 9.0625 14.5352 10.4844 13.25 11.6875C11.9648 12.8906 10.1875 13.875 8 13.875C5.78516 13.875 4.00781 12.8906 2.72266 11.6875C1.4375 10.4844 0.589844 9.0625 0.179688 8.10547C0.0976562 7.88672 0.0976562 7.64062 0.179688 7.42188C0.589844 6.4375 1.4375 5.01562 2.72266 3.83984ZM8 2.9375C6.19531 2.9375 4.74609 3.75781 3.625 4.79688C2.55859 5.78125 1.84766 6.92969 1.46484 7.75C1.84766 8.57031 2.55859 9.74609 3.625 10.7305C4.74609 11.7695 6.19531 12.5625 8 12.5625C9.77734 12.5625 11.2266 11.7695 12.3477 10.7305C13.4141 9.74609 14.125 8.57031 14.5078 7.75C14.125 6.92969 13.4141 5.78125 12.3477 4.79688C11.2266 3.75781 9.77734 2.9375 8 2.9375Z"/>
+                                                        </svg>
+                                                        <span class="button-label">Preview</span>
+                                                    </button>
+                                                    <button class="button button-primary button-w-85 h-38 button-disabled">
+                                                        <svg class="button-i" viewBox="0 0 16 16" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M14.6992 0.886719C14.918 1.02344 15.0273 1.26953 14.9453 1.51562L13.1953 13.3281C13.168 13.5195 13.0586 13.7109 12.8672 13.793C12.7852 13.8477 12.6758 13.9023 12.5664 13.9023C12.457 13.9023 12.375 13.875 12.293 13.8477L9.61328 12.6992L6.57812 14.668C6.46875 14.7227 6.33203 14.75 6.22266 14.75C6.14062 14.75 6.03125 14.7227 5.92188 14.6953C5.70312 14.5586 5.59375 14.3398 5.59375 14.0938V11.0039L1.38281 9.25391C1.16406 9.14453 1 8.92578 1 8.67969C0.972656 8.43359 1.10938 8.1875 1.32812 8.07812L14.0156 0.859375C14.2344 0.722656 14.5078 0.75 14.6992 0.886719ZM11.0898 4.03125L3.13281 8.54297L5.97656 9.74609L11.0898 4.03125ZM6.87891 12.8906L8.13672 12.0977L6.87891 11.5508V12.8906ZM12.0469 12.2891L13.3594 3.45703L7.23438 10.2656L12.0469 12.2891Z"/>
+                                                        </svg>
+                                                        <span class="button-label">Public</span>
+                                                    </button>
+                                                </div>
+                                                <table class="editor-table">
+                                                    <tbody>
+                                                    <tr class="editor-table-in">
+                                                        <td class="editor-table-title">Status:</td>
+                                                        <td class="editor-table-desc">
+                                                            <div class="editor-table-desc-in">
+                                                                <svg class="editor-table-i" viewBox="0 0 16 16"
+                                                                     fill="none"
+                                                                     xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5388 7.06274H8.43726C8.06429 7.06274 7.70661 6.91458 7.44289 6.65086C7.17916 6.38714 7.03101 6.02945 7.03101 5.65649V1.55493C7.03101 1.52385 7.01866 1.49404 6.99668 1.47207C6.97471 1.45009 6.9449 1.43774 6.91382 1.43774H4.21851C3.72122 1.43774 3.24431 1.63529 2.89268 1.98692C2.54105 2.33855 2.34351 2.81546 2.34351 3.31274V12.6877C2.34351 13.185 2.54105 13.6619 2.89268 14.0136C3.24431 14.3652 3.72122 14.5627 4.21851 14.5627H10.781C11.2783 14.5627 11.7552 14.3652 12.1068 14.0136C12.4585 13.6619 12.656 13.185 12.656 12.6877V7.17993C12.656 7.14885 12.6437 7.11904 12.6217 7.09707C12.5997 7.07509 12.5699 7.06274 12.5388 7.06274Z"/>
+                                                                    <path d="M12.2816 6.026L8.06841 1.81282C8.06021 1.80467 8.0498 1.79913 8.03846 1.79689C8.02713 1.79465 8.01539 1.79581 8.00471 1.80022C7.99403 1.80464 7.9849 1.81211 7.97846 1.8217C7.97202 1.83129 7.96855 1.84257 7.96851 1.85412V5.65715C7.96851 5.78147 8.01789 5.9007 8.1058 5.98861C8.19371 6.07652 8.31294 6.1259 8.43726 6.1259H12.2403C12.2518 6.12585 12.2631 6.12239 12.2727 6.11595C12.2823 6.10951 12.2898 6.10037 12.2942 6.0897C12.2986 6.07902 12.2998 6.06728 12.2975 6.05594C12.2953 6.04461 12.2897 6.03419 12.2816 6.026Z"/>
+                                                                </svg>
+                                                                <span>Draft</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="editor-table-in">
+                                                        <td class="editor-table-title">Publish:</td>
+                                                        <td class="editor-table-desc">
+                                                            <div class="editor-table-desc-in">
+                                                                <svg class="editor-table-i" viewBox="0 0 16 16"
+                                                                     fill="none"
+                                                                     xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M12.5388 7.06274H8.43726C8.06429 7.06274 7.70661 6.91458 7.44289 6.65086C7.17916 6.38714 7.03101 6.02945 7.03101 5.65649V1.55493C7.03101 1.52385 7.01866 1.49404 6.99668 1.47207C6.97471 1.45009 6.9449 1.43774 6.91382 1.43774H4.21851C3.72122 1.43774 3.24431 1.63529 2.89268 1.98692C2.54105 2.33855 2.34351 2.81546 2.34351 3.31274V12.6877C2.34351 13.185 2.54105 13.6619 2.89268 14.0136C3.24431 14.3652 3.72122 14.5627 4.21851 14.5627H10.781C11.2783 14.5627 11.7552 14.3652 12.1068 14.0136C12.4585 13.6619 12.656 13.185 12.656 12.6877V7.17993C12.656 7.14885 12.6437 7.11904 12.6217 7.09707C12.5997 7.07509 12.5699 7.06274 12.5388 7.06274Z"/>
+                                                                    <path d="M12.2816 6.026L8.06841 1.81282C8.06021 1.80467 8.0498 1.79913 8.03846 1.79689C8.02713 1.79465 8.01539 1.79581 8.00471 1.80022C7.99403 1.80464 7.9849 1.81211 7.97846 1.8217C7.97202 1.83129 7.96855 1.84257 7.96851 1.85412V5.65715C7.96851 5.78147 8.01789 5.9007 8.1058 5.98861C8.19371 6.07652 8.31294 6.1259 8.43726 6.1259H12.2403C12.2518 6.12585 12.2631 6.12239 12.2727 6.11595C12.2823 6.10951 12.2898 6.10037 12.2942 6.0897C12.2986 6.07902 12.2998 6.06728 12.2975 6.05594C12.2953 6.04461 12.2897 6.03419 12.2816 6.026Z"/>
+                                                                </svg>
+                                                                <span>Immediately</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="editor-column-in">
+                                            <div class="editor-title">
+                                                <h2 class="editor-title-in">Title</h2>
+                                                <textarea class="editor-textarea input-reset">
+                                                </textarea>
+                                            </div>
+
+                                            <div class="editor-column-right">
+                                                <h2 class="editor-title-in">Explanation</h2>
+                                                <div class="editor-actions">
+                                                    <div class="editor-title">
+                                                        <textarea class="editor-textarea input-reset">
+                                                        </textarea>
+
+                                                        <div class="editor-actions secondary">
+                                                            <button class="button button-primary h-38">
+                                                                <span class="button-label">Get Started</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="editor-actions secondary">
+                                                    <div class="select-container select-secondary">
+                                                        <label class="select-label">Language</label>
+                                                        <div class="select-item">
+                                                            <select class="select-in">
+                                                                <option value="">English</option>
+                                                                <option>Spanish</option>
+                                                                <option>Russian</option>
+                                                                <option>Armenian</option>
+                                                            </select>
+                                                            <svg class="select-i" viewBox="0 0 24 24">
+                                                                <path d="M5.29606 8.554C5.48568 8.36444 5.74282 8.25795 6.01095 8.25795C6.27907 8.25795 6.53622 8.36444 6.72584 8.554L11.7311 13.5593L16.7364 8.554C16.9271 8.36981 17.1825 8.26789 17.4476 8.27019C17.7127 8.2725 17.9664 8.37884 18.1538 8.56632C18.3413 8.7538 18.4477 9.00741 18.45 9.27253C18.4523 9.53766 18.3503 9.79308 18.1662 9.98379L12.446 15.7039C12.2564 15.8935 11.9992 16 11.7311 16C11.463 16 11.2058 15.8935 11.0162 15.7039L5.29606 9.98379C5.10649 9.79417 5 9.53702 5 9.2689C5 9.00077 5.10649 8.74362 5.29606 8.554Z"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <label class="select-label">Writing Style</label>
+                                                        <div class="select-item">
+                                                            <select class="select-in">
+                                                                <option value="">Creative</option>
+                                                            </select>
+                                                            <svg class="select-i" viewBox="0 0 24 24">
+                                                                <path d="M5.29606 8.554C5.48568 8.36444 5.74282 8.25795 6.01095 8.25795C6.27907 8.25795 6.53622 8.36444 6.72584 8.554L11.7311 13.5593L16.7364 8.554C16.9271 8.36981 17.1825 8.26789 17.4476 8.27019C17.7127 8.2725 17.9664 8.37884 18.1538 8.56632C18.3413 8.7538 18.4477 9.00741 18.45 9.27253C18.4523 9.53766 18.3503 9.79308 18.1662 9.98379L12.446 15.7039C12.2564 15.8935 11.9992 16 11.7311 16C11.463 16 11.2058 15.8935 11.0162 15.7039L5.29606 9.98379C5.10649 9.79417 5 9.53702 5 9.2689C5 9.00077 5.10649 8.74362 5.29606 8.554Z"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <label class="select-label">Writing Tone</label>
+                                                        <div class="select-item">
+                                                            <select class="select-in">
+                                                                <option value="">Cheerful</option>
+                                                            </select>
+                                                            <svg class="select-i" viewBox="0 0 24 24">
+                                                                <path d="M5.29606 8.554C5.48568 8.36444 5.74282 8.25795 6.01095 8.25795C6.27907 8.25795 6.53622 8.36444 6.72584 8.554L11.7311 13.5593L16.7364 8.554C16.9271 8.36981 17.1825 8.26789 17.4476 8.27019C17.7127 8.2725 17.9664 8.37884 18.1538 8.56632C18.3413 8.7538 18.4477 9.00741 18.45 9.27253C18.4523 9.53766 18.3503 9.79308 18.1662 9.98379L12.446 15.7039C12.2564 15.8935 11.9992 16 11.7311 16C11.463 16 11.2058 15.8935 11.0162 15.7039L5.29606 9.98379C5.10649 9.79417 5 9.53702 5 9.2689C5 9.00077 5.10649 8.74362 5.29606 8.554Z"></path>
+                                                            </svg>
+                                                        </div>
+
+                                                        <table class="editor-table">
+                                                            <tbody>
+                                                            <tr class="editor-table-in">
+                                                                <td class="editor-table-title">Session:</td>
+                                                                <td class="editor-table-desc">
+                                                                    <div class="editor-table-desc-in">
+                                                                        <span>$0.000</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="editor-table-in">
+                                                                <td class="editor-table-title">Last Request:</td>
+                                                                <td class="editor-table-desc">
+                                                                    <div class="editor-table-desc-in">
+                                                                        <span>$0.000</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div class="thumbnail">
+                                                        <div class="thumbnail-in">
+                                                            <svg class="thumbnail-pic" width="24" height="22"
+                                                                 viewBox="0 0 24 22" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M21.7031 0.5C22.9688 0.5 23.9531 1.53125 23.9531 2.75V19.25C23.9531 20.5156 22.9219 21.5 21.7031 21.5H2.20312C0.984375 21.5 0 20.5156 0 19.25V2.75C0 1.53125 0.984375 0.5 2.20312 0.5H21.7031ZM5.20312 18.125L5.15625 15.875C5.15625 15.6875 4.96875 15.5 4.78125 15.5H2.57812C2.34375 15.5 2.20312 15.6875 2.20312 15.875V18.125C2.20312 18.3594 2.34375 18.5 2.57812 18.5H4.82812C5.01562 18.5 5.20312 18.3594 5.20312 18.125ZM5.20312 12.125H5.15625V9.875C5.15625 9.6875 4.96875 9.5 4.78125 9.5H2.57812C2.34375 9.5 2.20312 9.6875 2.20312 9.875V12.125C2.20312 12.3594 2.34375 12.5 2.57812 12.5H4.82812C5.01562 12.5 5.20312 12.3594 5.20312 12.125ZM5.20312 6.125L5.15625 3.875C5.15625 3.6875 4.96875 3.5 4.78125 3.5H2.57812C2.34375 3.5 2.20312 3.6875 2.20312 3.875V6.125C2.20312 6.35938 2.34375 6.5 2.57812 6.5H4.82812C5.01562 6.5 5.20312 6.35938 5.20312 6.125ZM16.4531 17.75V13.25C16.4531 12.875 16.0781 12.5 15.7031 12.5H8.20312C7.78125 12.5 7.45312 12.875 7.45312 13.25V17.75C7.45312 18.1719 7.78125 18.5 8.20312 18.5H15.7031C16.0781 18.5 16.4531 18.1719 16.4531 17.75ZM16.4531 8.75V4.25C16.4531 3.875 16.0781 3.5 15.7031 3.5H8.20312C7.78125 3.5 7.45312 3.875 7.45312 4.25V8.75C7.45312 9.17188 7.78125 9.5 8.20312 9.5H15.7031C16.0781 9.5 16.4531 9.17188 16.4531 8.75ZM21.7031 18.125H21.75V15.875C21.75 15.6875 21.5625 15.5 21.375 15.5H19.125C18.9375 15.5 18.75 15.6875 18.75 15.875V18.125C18.75 18.3594 18.8906 18.5 19.125 18.5H21.3281C21.5156 18.5 21.7031 18.3594 21.7031 18.125ZM21.7031 12.125V9.875C21.7031 9.6875 21.5156 9.5 21.3281 9.5H19.125C18.8906 9.5 18.75 9.6875 18.75 9.875V12.125C18.75 12.3594 18.8906 12.5 19.125 12.5H21.3281C21.5156 12.5 21.7031 12.3594 21.7031 12.125ZM21.7031 6.125H21.6562V3.875C21.6562 3.6875 21.4688 3.5 21.2812 3.5H19.0781C18.8906 3.5 18.75 3.6875 18.75 3.875V6.125C18.75 6.35938 18.8906 6.5 19.125 6.5H21.3281C21.5156 6.5 21.7031 6.35938 21.7031 6.125Z"
+                                                                      fill="#3E3232" fill-opacity="0.25"/>
+                                                            </svg>
+
+                                                            <input type="file" class="thumbnail-input">
+
+                                                            <p class="thumbnail-desc">Drop image here, paste or</p>
+
+                                                            <button class="button button-thumbnail h-38 button-w-105">
+                                                                <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M13.6875 8.22974C13.6875 8.72192 13.2773 9.13208 12.8125 9.13208H8.875V13.0696C8.875 13.5344 8.46484 13.9172 8 13.9172C7.50781 13.9172 7.125 13.5344 7.125 13.0696V9.13208H3.1875C2.69531 9.13208 2.3125 8.72192 2.3125 8.22974C2.3125 7.76489 2.69531 7.38208 3.1875 7.38208H7.125V3.44458C7.125 2.95239 7.50781 2.54224 8 2.54224C8.46484 2.54224 8.875 2.95239 8.875 3.44458V7.38208H12.8125C13.2773 7.35474 13.6875 7.76489 13.6875 8.22974Z"
+                                                                          fill="#3E3232" fill-opacity="0.5"/>
+                                                                </svg>
+                                                                <span class="button-label">Select</span>
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                         <div class="content-body-inner" id="comments">
                             <h2>Comments</h2>
@@ -1623,174 +1838,16 @@ View::section( 'title', 'Dashboard' );
             navItems: '.nav-item-in',
             dropdownItems: '.nav-dropdown-item-in',
             tabContents: '.content-body-inner',
-            searchInput: '.search',
-            tableRows: '.table-body-tr',
-            tableBody: '.table-body',
         };
 
         let navItems = document.querySelectorAll(selectors.navItems);
         let dropdownItems = document.querySelectorAll(selectors.dropdownItems);
         let tabContents = document.querySelectorAll(selectors.tabContents);
-        let selectAllCheckbox = document.querySelector('.table-head-items input[type="checkbox"]');
-        let searchInput = document.querySelector(selectors.searchInput);
-        let tableBody = document.querySelector(selectors.tableBody);
-        let tableRows = document.querySelectorAll(selectors.tableRows);
-
-        const rowsPerPage = 10;
-        let currentPage = 1;
-        const maxVisiblePages = 3;
-
-        // Debounce function to optimize search and pagination performance
-        const debounce = (func, wait) => {
-            let timeout;
-            return (...args) => {
-                clearTimeout(timeout);
-                timeout = setTimeout(() => func.apply(null, args), wait);
-            };
-        };
-
-        // Update table rows collection
-        const updateTableRowsCollection = () => {
-            tableRows = document.querySelectorAll(selectors.tableRows);
-            console.log(`Updated table rows: ${tableRows.length} rows found`); // Debug log
-        };
-
-        // Update visible table rows based on current page
-        const updateTableRows = () => {
-            updateTableRowsCollection();
-            const start = (currentPage - 1) * rowsPerPage;
-            const end = start + rowsPerPage;
-
-            tableRows.forEach((row, index) => {
-                const isVisible = row.dataset.searchVisible !== 'false'; // Respect search filter
-                row.classList.toggle('d-none', !(isVisible && index >= start && index < end));
-            });
-
-            console.log(`Showing rows ${start} to ${end} of ${tableRows.length} total rows`); // Debug log
-        };
-
-        // Update pagination controls
-
-        // Search functionality
-        const performSearch = (searchTerm) => {
-            updateTableRowsCollection();
-            const term = searchTerm.toLowerCase().trim();
-
-            tableRows.forEach(row => {
-                const rowText = Array.from(row.cells)
-                    .map(cell => cell.textContent.toLowerCase())
-                    .join(' ');
-                const isVisible = term === '' || rowText.includes(term);
-                row.dataset.searchVisible = isVisible; // Store visibility state
-                // Don't set display here; let updateTableRows handle it
-            });
-
-            // Reset to first page and update pagination
-            updateTableRows();
-
-            // Update select all checkbox state
-            if (selectAllCheckbox) {
-                selectAllCheckbox.checked = false;
-                selectAllCheckbox.indeterminate = false;
-            }
-
-            // Update clear button visibility
-            if (searchInput) {
-                const clearButton = document.querySelector('.search-clear');
-                if (clearButton) {
-
-                    clearButton.classList.toggle('d-none', !searchTerm);
-                }
-            }
-        };
-
-        // Initialize search event listener and clear button
-        if (searchInput) {
-            const clearButton = document.createElement('button');
-            clearButton.textContent = '✕';
-            clearButton.className = 'search-clear';
-            clearButton.classList.add('d-none')
-            clearButton.setAttribute('aria-label', 'Clear search');
-            searchInput.parentElement.appendChild(clearButton);
-
-            searchInput.addEventListener('input', debounce((e) => {
-                performSearch(e.target.value);
-            }, 300));
-
-            clearButton.addEventListener('click', () => {
-                searchInput.value = '';
-                performSearch('');
-                searchInput.focus();
-            });
-        } else {
-            console.warn('Search input element not found');
-        }
-
-        // Rebind checkbox and trash button events
-        const rebindRowEvents = () => {
-            const rowCheckboxes = document.querySelectorAll('.table-body-items input[type="checkbox"]');
-            const trashButtons = document.querySelectorAll('.table-actions span:last-child');
-
-            // Rebind checkbox change events
-            rowCheckboxes.forEach(checkbox => {
-                checkbox.removeEventListener('change', updateSelectAllStatus); // Prevent duplicate listeners
-                checkbox.addEventListener('change', updateSelectAllStatus);
-            });
-
-            // Rebind trash button events
-            trashButtons.forEach(button => {
-                button.removeEventListener('click', handleTrashClick); // Prevent duplicate listeners
-                button.addEventListener('click', handleTrashClick);
-            });
-        };
-
-        // Checkbox change handler
-        const updateSelectAllStatus = () => {
-            const visibleCheckboxes = Array.from(document.querySelectorAll('.table-body-tr')).filter(row => {
-                return row.dataset.searchVisible !== 'false';
-            }).map(row => row.querySelector('input[type="checkbox"]')).filter(cb => cb); // убираем null
-
-            const allChecked = visibleCheckboxes.every(cb => cb.checked);
-            const someChecked = visibleCheckboxes.some(cb => cb.checked);
-
-            if (selectAllCheckbox) {
-                selectAllCheckbox.checked = allChecked;
-                selectAllCheckbox.indeterminate = someChecked && !allChecked;
-            }
-        };
-
-
-        // Trash button handler
-        const handleTrashClick = (e) => {
-            e.preventDefault();
-            const checkedRows = document.querySelectorAll('.table-body-tr input[type="checkbox"]:checked');
-            checkedRows.forEach(checkbox => {
-                checkbox.closest('.table-body-tr').remove();
-            });
-            if (selectAllCheckbox) {
-                selectAllCheckbox.checked = false;
-                selectAllCheckbox.indeterminate = false;
-            }
-            updateTableRows();
-            rebindRowEvents();
-        };
-
-        // Select all checkbox handler
-        if (selectAllCheckbox) {
-            selectAllCheckbox.addEventListener('change', (e) => {
-                const rowCheckboxes = document.querySelectorAll('.table-body-items input[type="checkbox"]');
-                rowCheckboxes.forEach(checkbox => {
-                    const row = checkbox.closest('.table-body-tr');
-                    if (row.style.display !== 'none') {
-                        checkbox.checked = e.target.checked;
-                    }
-                });
-            });
-        }
 
         // Early return if required elements are missing
         if (!navItems.length || !dropdownItems.length || !tabContents.length) {
             console.warn('Required navigation elements not found');
+            return;
         }
 
         // Toggle navigation dropdown
@@ -1830,14 +1887,6 @@ View::section( 'title', 'Dashboard' );
             if (targetTab) {
                 targetTab.classList.add('active');
                 console.log(`Switched to tab: ${tabId}`);
-                // Reset search and pagination when switching tabs
-                if (searchInput) {
-                    searchInput.value = '';
-                    performSearch('');
-                }
-                currentPage = 1;
-                updateTableRows();
-                searchInput.focus();
             } else {
                 console.warn(`Tab content not found for ID: ${tabId}`);
             }
@@ -1865,10 +1914,5 @@ View::section( 'title', 'Dashboard' );
             }
         };
 
-        updateTableRowsCollection();
-        tableRows.forEach(row => row.dataset.searchVisible = 'true'); // Initialize search visibility
-        updateTableRows();
-        rebindRowEvents();
         initializeFirstTab();
-    });
-</script>
+    });</script>

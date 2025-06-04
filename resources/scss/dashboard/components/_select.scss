@@ -1,0 +1,67 @@
+.select {
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--select-gap);
+  }
+
+  &-label {
+    margin-block-end: 5px;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-600);
+  }
+
+  &-item {
+    position: relative;
+    width: 100%;
+  }
+
+  &-i {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 16px;
+    height: auto;
+    flex: 0 0 16px;
+    display: block;
+    fill: currentColor;
+  }
+
+  &-in {
+    width: var(--select-width);
+    padding-block: var(--select-padding-block);
+    padding-inline: var(--select-padding-inline);
+    background-color: var(--select-local-bg);
+    border: var(--select-local-border);
+    border-radius: var(--select-local-border-radius);
+    font-size: var(--fs-14);
+
+    appearance: none;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-block-end: var(--select-margin-be);
+    }
+  }
+
+  &-primary {
+    --select-padding-block: 6px;
+    --select-padding-inline: 10px;
+    --select-local-border: 1px solid var(--select-border);
+    --select-local-border-radius: 4px;
+    --select-gap:10px;
+  }
+
+  &-secondary {
+    --select-width: 100%;
+    --select-margin-be:20px;
+    --select-padding-block: 6px;
+    --select-padding-inline: 10px;
+    --select-local-bg: var(--dashboard-bg);
+    --select-local-border-radius: 4px;
+    --select-gap:0;
+    --actions-margin-bs:20px;
+  }
+}

@@ -1,0 +1,32 @@
+.editor-table {
+  width: 100%;
+  margin-block-start: 10px;
+
+  &-title {
+    width: 100%;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-700);
+    color: var(--primary-color);
+  }
+
+  &-desc {
+    font-size: var(--fs-12);
+    color: var(--primary-color);
+
+    &-in {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 3px;
+      padding-inline-start: 10px;
+    }
+  }
+
+  &-i {
+    width: 14px;
+    height: auto;
+    flex: 0 0 14px;
+    display: block;
+    fill: var(--primary-color);
+  }
+}

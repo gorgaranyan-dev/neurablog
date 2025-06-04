@@ -1,23 +1,80 @@
 .button {
 
+  & {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 5px;
+    background-color: var(--button-local-bg);
+    color: var(--button-local-color);
+    border: 1px solid var(--button-border);
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+
+  }
+
+  &-w-85 {
+    max-width: 85px;
+  }
+
+  &-w-105 {
+    max-width: 105px;
+  }
+
   &-twice {
     display: flex;
     gap: 20px;
   }
 
   &-primary {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--button-primary-bg);
-    color: var(--button-primary-color);
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
+    --button-local-bg: var(--button-primary-bg);
+    --butotn-border:var(--primary-color);
+    --button-local-color: var(--white);
+    --button-i-local-fill: var(--white);
+
+    &:hover {
+      --button-local-bg: var(--white);
+      --button-local-color: var(--primary-color);
+      --button-i-local-fill: var(--primary-color);
+    }
+  }
+
+  &-secondary {
+    --butotn-border:var(--primary-color);
+    --button-local-color: var(--primary-color);
+    --button-i-local-fill: var(--primary-color);
+
+    &:hover {
+      --button-local-bg: var(--button-primary-bg);
+      --button-local-color: var(--white);
+      --button-i-local-fill: var(--white);
+    }
+  }
+
+  &-thumbnail {
+    --button-border:var(--thumbnail-border);
+    --button-i-local-fill: currentColor;
   }
 
   &-disabled {
     opacity: 0.7;
     pointer-events: none;
+  }
+
+  &-label {
+    font-size: var(--fs-12);
+    font-weight: var(--fw-500);
+  }
+
+  &-i {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    fill: var(--button-i-local-fill);
+    transition: fill 0.3s ease-in-out;
   }
 }

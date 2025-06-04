@@ -1,0 +1,19 @@
+.editor {
+  &-column {
+    min-width: 100%;
+
+    &-in {
+      display: grid;
+      grid-template-columns: 1fr 272px;
+      gap: 10px;
+
+      &:not(:last-child) {
+        margin-block-end: 20px;
+      }
+
+      &:not(:first-child) {
+        padding-block: 20px;
+      }
+    }
+  }
+}
